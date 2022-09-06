@@ -3,10 +3,12 @@ import './index.css';
 import { useState } from 'react';
 
 function TrafficLight() {
-  const [ color, setColor] = useState("red");
+  const [ color, setColor] = useState("yellow");
   return (
     <div className='trafficLight'>
-      <div style={{color}}>hi</div>
+      <button className='circle1' onClick={() => setColor(color)}></button>
+      <button className='circle2' onClick={() => setColor(color)}></button>
+      <button className='circle3' onClick={() => setColor(color)}></button>
     </div>
   );
 }
