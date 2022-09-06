@@ -1,9 +1,10 @@
+import React from 'react';
 import './index.css';
 
-function App() {
+function TrafficLight() {
   return (
-    <h1>hi</h1>
+    <div className='trafficLight'>q</div>
   );
 }
 
-export default App;
+export default TrafficLight;
