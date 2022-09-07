@@ -1,33 +1,17 @@
 .trafficLight{
   border: solid 5px black;
   text-align: center;
-  width: 20%;
-  height: 600px;
-  margin-left: 40%;
-  margin-top: 5%;
+  width: 10%;
+  height: 570px;
+  margin-left: 45%;
+  margin-top: 10%;
   background-color: black;
 }
-.circle1{
-  width: 52%;
-  height: 32%;
-  border: solid 1px green;
+.light{
+  width: 90%;
+  height: 175px;
+  border: 2px solid black;
   border-radius: 50%;
-  background-color: green;
-  margin-top: 4px;
-}
-.circle2{
-  width: 52%;
-  height: 32%;
-  border: solid 1px yellow;
-  border-radius: 50%;
-  background-color: yellow;
-  margin-top: 4px;
-}
-.circle3{
-  width: 52%;
-  height: 32%;
-  border: solid 1px red;
-  border-radius: 50%;
-  background-color: red;
-  margin-top: 4px;
+  margin: auto;
+  margin-top: 7px;
 }
