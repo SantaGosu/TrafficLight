@@ -1,11 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
-import TrafficLight from './App';
+import { useState } from 'react';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  
-    <TrafficLight />
- 
-);
+function TrafficLight() {
+  const [ color, setColor] = useState("yellow");
+  return (
+    <div className='trafficLight'>
+      <button className='circle1' onClick={() => setColor(color)}></button>
+      <button className='circle2' onClick={() => setColor(color)}></button>
+      <button className='circle3' onClick={() => setColor(color)}></button>
+    </div>
+  );
+}
+ReactDOM.render(<TrafficLight />, document.getElementById("root"));
