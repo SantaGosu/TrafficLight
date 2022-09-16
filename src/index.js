@@ -4,13 +4,16 @@ import './index.css';
 
 function TrafficLight() {
   
-  const [litUp, setLitUp] = useState("red");
+  const [litUp, setLitUp] = useState("");
 
   return ( 
     <div className="trafficLight">
-      <div className={"light red" + ((litUp === "red") ? " glow": "")}></div>
-      <div className={"light yellow" + ((litUp === "yellow") ? " glow": "")}></div>
-      <div className={"light green" + ((litUp === "green") ? " glow": "")}></div>
+      <div onClick={() => setLitUp("red")}
+      className={"light red" + ((litUp === "red") ? " glow": "")}></div>
+      <div onClick={() => setLitUp("yellow")}
+      className={"light yellow" + ((litUp === "yellow") ? " glow": "")}></div>
+      <div onClick={() => setLitUp("green")}
+      className={"light green" + ((litUp === "green") ? " glow": "")}></div>
     </div>
   );
 }
