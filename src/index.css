@@ -15,3 +15,15 @@
   margin: auto;
   margin-top: 7px;
 }
+.glow{
+  box-shadow: 0px 3px 10px 10px #ebeb34;
+}
+.red{
+  background: red;
+}
+.yellow{
+  background: yellow;
+}
+.green{
+  background: green;
+}

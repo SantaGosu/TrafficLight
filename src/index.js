@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Light from './light';
 
 function TrafficLight() {
-  const colors = ["red", "yellow", "green"]
+  
+  const [litUp, setLitUp] = useState("red");
+
   return ( 
     <div className="trafficLight">
-      {colors.map((color) => {
-        return <Light color={color}/>;
-      })}
+      <div className={"light red" + ((litUp === "red") ? " glow": "")}></div>
+      <div className={"light yellow" + ((litUp === "yellow") ? " glow": "")}></div>
+      <div className={"light green" + ((litUp === "green") ? " glow": "")}></div>
     </div>
   );
 }
